@@ -1,15 +1,17 @@
 function makeBuffer() {
-    var storage = ""
+    var storage = "";
     function buffer( stringToWrite ){
+
+        buffer.clear =  function() {
+            storage = "";
+            return( storage )
+        };
+
         if( stringToWrite )
-            storage += stringToWrite
+            storage += stringToWrite;
         return( storage )
     }
 
-    function clear(){
-        storage = ""
-        return( storage )
-    }
     return( buffer )
 }
 
