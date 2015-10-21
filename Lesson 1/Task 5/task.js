@@ -7,8 +7,9 @@ function makeLine() {
     var students = [];
 
     for (var i = 0; i < 10; i++) {
+        var tmp = i;
         var student = function() { // функция-ученик
-            alert( i ); // кричит свой номер
+            alert( tmp ); // кричит свой номер
         };
         students.push(student);
     }
