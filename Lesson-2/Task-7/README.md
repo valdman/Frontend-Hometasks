@@ -6,4 +6,4 @@
 * https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
 * https://developer.mozilla.org/en-US/docs/Web/API/Element/className
 
-Нужно написать код в task.js. Сама страница находится в index.html
+Нужно написать код в task.js. Сама страница находится в index.html. Изменять можно только файл task.js
