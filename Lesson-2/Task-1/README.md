@@ -90,14 +90,14 @@ Arguments
 Не создавать любые ненужные функции, такие как функции-помощники.
 
 ####Подсказка.
-
+```
 `arguments` значение доступно в любой функции. Это объект, который крякает как массив.
 {
   0: 'argument0',
   1: 'argument1', // etc
   length: 2
 }
-
+```
 ####Ресурсы в помощь
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
