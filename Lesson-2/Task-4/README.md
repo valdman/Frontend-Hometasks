@@ -47,7 +47,7 @@ nums.slice(1, 2); // [2]
 
 #### Подсказки
 
-* Решение в две строки.
+* Решение в одну строку.
 * Каждая JavaScript Function наследует методы, такие как call, apply и bind из объекта `Function.prototype`.
 * Function#call. Внутри `someFunction.call()`, значение `this` будет `someFunction`.
 * Function.call сама функция, таким образом, она наследуется от `Function.prototype`.
