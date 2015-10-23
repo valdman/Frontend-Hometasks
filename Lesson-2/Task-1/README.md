@@ -111,6 +111,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_
 
 ####Шаблон:
 
+```js
 function duckCount() {
   // SOLUTION GOES HERE
 }
+```
