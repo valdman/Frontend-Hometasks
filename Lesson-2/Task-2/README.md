@@ -64,6 +64,6 @@ function upgradeUser(User) {
 
   }
 
-  return BetterUser
+  return BetterUser;
 }
 ```
