@@ -7,5 +7,3 @@
 * https://developer.mozilla.org/en-US/docs/Web/API/Element/className
 
 Нужно написать код в task.js. Сама страница находится в index.html. Изменять можно только файл task.js
-Результат выполнения будет такой:
-![Сриншотик](http://s.twosphere.ru/screenshots/10-24-15_00-03-11.png)
