@@ -11,9 +11,9 @@
  */
 
 function User(title, name) {
-  this.title = title
-  this.name = name
-  console.info('NEW USER: ' + this)
+  this.title = title;
+  this.name = name;
+  console.info('NEW USER: ' + this);
 }
 
 /**
@@ -22,7 +22,7 @@ function User(title, name) {
  */
 
 User.prototype.displayName = function() {
-  return this.title + ' ' + this.name
+  return this.title + ' ' + this.name;
 }
 
 /**
@@ -30,15 +30,15 @@ User.prototype.displayName = function() {
  */
 
 User.prototype.toString = function() {
-  return '[User:'+this.displayName()+']'
+  return '[User:'+this.displayName()+']';
 }
 ```
 
 #### Пример
 
 ```js
-var joe = new BetterUser('Mr.', 'Joe Smith') // передаем заголовок и имя.
-console.log('Hello ' + joe) // 'Hello [BetterUser: Mr. Joe Smith]'
+var joe = new BetterUser('Mr.', 'Joe Smith'); // передаем заголовок и имя.
+console.log('Hello ' + joe); // 'Hello [BetterUser: Mr. Joe Smith]'
 ```
 
 #### Условия
