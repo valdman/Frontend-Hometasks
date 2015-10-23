@@ -51,10 +51,6 @@ nums.slice(1, 2); // [2]
 * Каждая JavaScript Function наследует методы, такие как call, apply и bind из объекта `Function.prototype`.
 * Function#call. Внутри `someFunction.call()`, значение `this` будет `someFunction`.
 * Function.call сама функция, таким образом, она наследуется от `Function.prototype`.
-
-#### Ресурсы
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
-
 ```js
 function myFunction() {
   console.log('called my function');
@@ -62,6 +58,9 @@ function myFunction() {
 
 Function.prototype.call.call(myFunction); // => "called my function"
 ```
+
+#### Ресурсы
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
 #### Шаблон
 
