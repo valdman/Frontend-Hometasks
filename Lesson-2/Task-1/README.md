@@ -1,4 +1,4 @@
-В JavaScript есть такая штука под названием 'duck typing'. Переводится как утиная типизация. 
+В JavaScript есть такая штука под названием ```'duck typing'```. Переводится как утиная типизация. 
 
 Утиная типизация - это стиль динамической типизации, в которой объект, методы и свойства 
 
@@ -19,23 +19,26 @@
 Мы можем использовать Object.hasOwnProperty для обнаружения, если объект имеет свойство, 
 
 определенное у себя (т. е. не унаследовал от своего прототипа):
-
+```js
 var duck = {
   quack: function() {
     console.log('quack')
   }
 }
-
-duck.hasOwnProperty('quack') // => true
+```
+```duck.hasOwnProperty('quack') // => true```
 Мы не дали утке метод .hasOwnProperty, откуда он взялся?
 
 Утка была создана через {} синтаксис, и как таковая, отнаследовалась от Object.prototype:
+```js
 var object = {quack: true}
 
 Object.getPrototypeOf(object) === Object.prototype // => true
 Object.hasOwnProperty('quack')                     // => true
+```
 Но что, если объект не наследуется от Object.prototype?
 
+```js
 // создать объект с 'null' прототипом.
 var object = Object.create(null)
 object.quack = function() {
@@ -47,6 +50,7 @@ Object.getPrototypeOf(object) === null             // => true
 
 object.hasOwnProperty('quack')
 // => TypeError: Object object has no method 'hasOwnProperty'
+```
 Мы также можем использовать hasOwnProperty из Object.prototype хотя, если мы вызываем эту 
 
 функцию в контексте this, то значение будет что-то вроде "выглядит как объект". Function.call 
@@ -55,8 +59,9 @@ object.hasOwnProperty('quack')
 
 // Первый аргумент вызова становится значением `this`
 // остальные аргументы передаются в функцию последовательно.
-
+```js
 Object.prototype.hasOwnProperty.call(object, 'quack') // => true
+```
 
 ####Задание:
 Напишите функцию duckCount, которая возвращает число аргументов, переданных ей, которые имеют 
@@ -65,10 +70,12 @@ Object.prototype.hasOwnProperty.call(object, 'quack') // => true
 
 ####Пример:
 
+```js
 var notDuck = Object.create({quack: true})
 var duck = {quack: true}
 var ducksArr = [{ quack: true }];
 duckCount(duck, notDuck, ducksArr) // 1
+```
 Arguments
 
 Вы можете передать от 0 до 20 аргументов в эту функцию. Каждый аргумент может быть любого типа 
@@ -93,16 +100,15 @@ Arguments
 ####Ресурсы в помощь
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
-https://developer.mozilla.org/en-
 
-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in
-https://developer.mozilla.org/en-
 
-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like
-https://developer.mozilla.org/en-
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like
 
-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments
+
 ####Шаблон:
 
 function duckCount() {
