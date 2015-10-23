@@ -66,7 +66,9 @@ Function.prototype.call.call(myFunction); // => "called my function"
 #### Шаблон
 
 ```js
-function slice() {
-	// your solution here!
+var slice = //solution here!
+
+function() {
+  var args = slice(arguments); // это работает
 }
 ```
