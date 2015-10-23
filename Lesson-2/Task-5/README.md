@@ -7,7 +7,7 @@
 ## Пример
 
 ```js
-var spy = Spy(console, 'error') // Spy(цель, название метода, который будем считать)
+var spy = Spy(console, 'error') // Spy(цель, название метода)
 
 console.error('calling console.error')
 console.error('calling console.error')
