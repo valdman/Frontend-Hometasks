@@ -75,4 +75,5 @@ function testCase() {
 testCase(1, 2, 4); // [2, 4]
 testCase(1, 1, 1); // [1, 1]
 testCase(1, ['a', function () { }], 1, 1, 4, 5, 7, -100); // [Array[2], 1]
+testCase(); // []
 ```
