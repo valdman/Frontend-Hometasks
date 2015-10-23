@@ -67,7 +67,12 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Ar
 ```js
 var slice = //solution here!
 
-function() {
-  var args = slice(arguments); // это работает
+function testCase() {
+  var args = slice(arguments, 1, 3); // это работает
+  console.log(args);
 }
+
+testCase(1, 2, 4); // [2, 4]
+testCase(1, 1, 1); // [1, 1]
+testCase(1, ['a', function () { }], 1, 1, 4, 5, 7, -100); // [Array[2], 1]
 ```
