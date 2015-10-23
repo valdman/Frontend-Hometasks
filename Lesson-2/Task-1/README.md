@@ -58,6 +58,7 @@ object.hasOwnProperty('quack')
 позволяет нам вызвать любую функцию с измененным this.
 
 // Первый аргумент вызова становится значением `this`
+
 // остальные аргументы передаются в функцию последовательно.
 ```js
 Object.prototype.hasOwnProperty.call(object, 'quack') // => true
