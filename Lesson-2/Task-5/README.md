@@ -39,5 +39,5 @@ function Spy(target, method) {
 
 var spy = Spy(window, 'alert');
 alert('Никто не узнает, что я вызывал алёрт');
-console.log('Количество вызыванных алертов:', spy.count);
+console.log('Количество вызванных алертов:', spy.count);
 ```
