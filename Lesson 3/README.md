@@ -52,10 +52,10 @@
 В функции ```go``` происходит изменение текущих координат текущей фигуры. (Вспомните про top и left).
 
 #### Ресурсы
-CustomEvent: https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
-document.createElement: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
-[[HTMLElementTarget]].addEventListener: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-[[HTMLElementTarget]].addEventListener: http://javascript.ru/tutorial/events/comparison
+* CustomEvent: https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
+* document.createElement: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+* [[HTMLElementTarget]].addEventListener: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+* [[HTMLElementTarget]].addEventListener: http://javascript.ru/tutorial/events/comparison
 
 ####Результат
 ![Результат](http://cs624324.vk.me/v624324161/5a779/f3wO22qgj1k.jpg)
